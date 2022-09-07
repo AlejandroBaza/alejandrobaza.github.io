@@ -1,0 +1,20 @@
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    size: 20px;
+    color: #333;
+}
+
+table, th, td{
+    padding: 5px;
+    border-spacing: 10px;
+    border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    size: 12px;
+
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    size: 14px;
+    color: #000;
+}
