@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de agrupacion de elementos</title>
+</head>
+<body>
+    
+<form action="/action_page.php">
+    <fieldset>
+        <legend>Agrupacion de varios controles:</legend>
+        <label for="fname">Campo de texto:</label>
+        <input type="text" id="fname" name="fname" value="">
+        <label for="lista">Lista de selection:</label>
+        <select id="lista" name="lista">
+        <option value="opcio1">opcion 1</option>
+        <option value="opcion2">opcion 2</option>
+        <option value="opcion3">opcion 3</option>
+        <textarea name="message" cols="50" rows="5">En este control del formulario se pueden escribir varias lineas de texto.</textarea>
+        <br>
+        <br>
+    </fieldset>
+</form>
+
+<form action="/action_page.php">
+    <fieldset>
+    <legend>Agrupacion de botones:</legend>
+    <p><button type="reset">Reset</button></p>
+    <input type="submit" value="Enviar">
+
+    </fieldset>
+    </form>
+</body>
+</html>
+
+<!--1-Boton de resset borrar todo
+    2-El campo de texto convertir las palabras a mayusculas
+    3-cuando seleccionan la opcion 3 te salga opcion invalida
+    4-Area de texto cada vez que escriba se convierta en el simbolo de porcentaje-->
