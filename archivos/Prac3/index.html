@@ -7,33 +7,48 @@
     <title>Ejemplo de agrupacion de elementos</title>
 </head>
 <body>
-    
+    <script>
+        function validar(){
+            var opcionselec=document.getElementById('list');
+            if(opcionselec.value==2)
+            {
+                alert("Opcion invalida");
+            }
+        }
+
+    </script>
 <form action="/action_page.php">
     <fieldset>
         <legend>Agrupacion de varios controles:</legend>
         <label for="fname">Campo de texto:</label>
-        <input type="text" id="fname" name="fname" value="">
-        <label for="lista">Lista de selection:</label>
-        <select id="lista" name="lista">
-        <option value="opcio1">opcion 1</option>
-        <option value="opcion2">opcion 2</option>
-        <option value="opcion3">opcion 3</option>
+        <input type="text" id="fname" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()">
+        <label for="lista">Lista de seleccion:</label>
+        <select id="list" name="list">
+        <option value="0">opcion 1</option>
+        <option value="1">opcion 2</option>
+        <option value="2">opcion 3</option>
+        <br>
+        <p>Area de texto</p>
         <textarea name="message" cols="50" rows="5">En este control del formulario se pueden escribir varias lineas de texto.</textarea>
         <br>
         <br>
     </fieldset>
-</form>
+
 
 <form action="/action_page.php">
     <fieldset>
     <legend>Agrupacion de botones:</legend>
-    <p><button type="reset">Reset</button></p>
-    <input type="submit" value="Enviar">
+    <p><button type="reset" value="Restablecer">Restablecer valores preterminados</button></p>
+    <input type="button" onclick="validar();" value="validar">
 
     </fieldset>
     </form>
-</body>
-</html>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+  </body>
+ </html>
 
 <!--1-Boton de resset borrar todo
     2-El campo de texto convertir las palabras a mayusculas
