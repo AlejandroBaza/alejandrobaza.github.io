@@ -17,6 +17,13 @@
         }
 
     </script>
+
+    <script>
+        function conversion(){
+            let text = document.getElementById("conv").value;
+            document.getElementById("conv").value = text.replace(" ","$");
+        }
+    </script>
 <form action="/action_page.php">
     <fieldset>
         <legend>Agrupacion de varios controles:</legend>
@@ -29,7 +36,7 @@
         <option value="2">opcion 3</option>
         <br>
         <p>Area de texto</p>
-        <textarea name="message" cols="50" rows="5">En este control del formulario se pueden escribir varias lineas de texto.</textarea>
+        <textarea name="message" cols="50" rows="5" onkeyup="conversion()" id="conv" placeholder="En este control del formulario se pueden escribir varias lineas de texto."></textarea>
         <br>
         <br>
     </fieldset>
@@ -47,10 +54,10 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
-  </body>
- </html>
+ </body>
+</html>
 
 <!--1-Boton de resset borrar todo -Listo
     2-El campo de texto convertir las palabras a mayusculas - Listo
     3-cuando seleccionan la opcion 3 te salga opcion invalida- Listo
-    4-Area de texto cada vez que escriba se convierta en el simbolo de porcentaje-->
+    4-Area de texto cada vez que escriba se convierta en el simbolo de porcentaje Listo-->
